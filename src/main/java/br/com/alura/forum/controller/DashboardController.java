@@ -24,7 +24,7 @@ public class DashboardController {
 	@Autowired
 	private TopicRepository topicRepository;
 	
-	@GetMapping(value="/api/dashboard", produces=MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value="/api/topics/dashboard", produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<DashboardOutputDto> listDashboard() {
 		
 		List<DashboardOutputDto> dashboard = new ArrayList<>();
